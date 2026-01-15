@@ -6,8 +6,8 @@
 
 ## Tasks
 
-- [ ] 1. 项目初始化与基础架构
-  - [ ] 1.1 初始化 Next.js 16 前端项目
+- [-] 1. 项目初始化与基础架构
+  - [x] 1.1 初始化 Next.js 16 前端项目
     - 配置 TypeScript 5 严格模式
     - 配置 Tailwind CSS 4
     - 创建基础目录结构 (app, components, lib, hooks)
@@ -40,15 +40,15 @@
     - **Property 10: 存储服务一致性**
     - **Validates: Requirements 9.1, 9.2, 9.3**
 
-- [ ] 3. Gemini API 集成
-  - [ ] 3.1 实现 Gemini API 客户端
+- [x] 3. Gemini API 集成
+  - [x] 3.1 实现 Gemini API 客户端
     - 创建 Gemini 客户端基础结构
     - 实现 2.5 Flash 文本分析接口
     - 实现 3 Pro Image 图像生成接口
     - 配置错误处理和重试机制
     - _Requirements: 2.1, 5.1_
 
-  - [ ] 3.2 实现角色解析服务
+  - [x] 3.2 实现角色解析服务
     - 解析 Gemini 返回的角色信息
     - 提取角色名称和描述
     - _Requirements: 2.2_
@@ -57,26 +57,26 @@
     - **Property 3: 角色解析结构完整性**
     - **Validates: Requirements 2.2**
 
-- [ ] 4. Checkpoint - 基础架构验证
+- [x] 4. Checkpoint - 基础架构验证
   - 确保所有测试通过，如有问题请询问用户
 
-- [ ] 5. 前端布局与剧本输入
-  - [ ] 5.1 实现主页面布局
+- [x] 5. 前端布局与剧本输入
+  - [x] 5.1 实现主页面布局
     - 创建左侧边栏 + 右侧工作区布局
     - 实现响应式适配
     - _Requirements: 11.1, 11.2, 11.3_
 
-  - [ ] 5.2 实现 ScriptInput 组件
+  - [x] 5.2 实现 ScriptInput 组件
     - 多行文本输入框
     - 实时状态同步
     - _Requirements: 1.1, 1.3_
 
-  - [ ] 5.3 实现 StyleSelector 组件
+  - [x] 5.3 实现 StyleSelector 组件
     - 风格选择下拉框
     - 自定义风格输入
     - _Requirements: 1.2_
 
-  - [ ] 5.4 实现空输入验证逻辑
+  - [x] 5.4 实现空输入验证逻辑
     - 禁用按钮状态管理
     - 提示信息显示
     - _Requirements: 1.4_
@@ -85,24 +85,24 @@
     - **Property 2: 空输入验证**
     - **Validates: Requirements 1.4**
 
-- [ ] 6. 角色管理功能
-  - [ ] 6.1 实现角色管理后端 API
+- [x] 6. 角色管理功能
+  - [x] 6.1 实现角色管理后端 API
     - POST /api/v1/storyboard/analyze (AI 角色识别)
     - CRUD /api/v1/characters
     - _Requirements: 2.1, 3.1, 3.2, 3.3_
 
-  - [ ] 6.2 实现 CharacterList 和 CharacterCard 组件
+  - [x] 6.2 实现 CharacterList 和 CharacterCard 组件
     - 角色列表展示
     - 添加/删除/编辑角色
     - 参考图占位符
     - _Requirements: 3.1, 3.2, 3.3, 3.4, 3.5_
 
-  - [ ] 6.3 实现角色参考图上传功能
+  - [x] 6.3 实现角色参考图上传功能
     - 文件选择器
     - 上传进度显示
     - _Requirements: 4.1, 4.2, 4.4_
 
-  - [ ] 6.4 实现 AI 生成人设功能
+  - [x] 6.4 实现 AI 生成人设功能
     - 调用 Gemini 3 Pro Image
     - 生成进度显示
     - _Requirements: 4.3, 4.4_
@@ -111,11 +111,11 @@
     - **Property 4: 角色列表 CRUD 操作**
     - **Validates: Requirements 3.1, 3.2, 3.3**
 
-- [ ] 7. Checkpoint - 角色管理验证
+- [x] 7. Checkpoint - 角色管理验证
   - 确保所有测试通过，如有问题请询问用户
 
-- [ ] 8. Canvas 图像处理
-  - [ ] 8.1 实现 Canvas 图像分割工具函数
+- [x] 8. Canvas 图像处理
+  - [x] 8.1 实现 Canvas 图像分割工具函数
     - splitToGrid9: 九宫格分割
     - splitToGrid4: 四宫格分割
     - canvasToBlob: 导出图像
@@ -125,14 +125,14 @@
     - **Property 6: 网格图像分割**
     - **Validates: Requirements 5.2, 6.3**
 
-- [ ] 9. 九宫格分镜生成
-  - [ ] 9.1 实现九宫格生成后端 API
+- [x] 9. 九宫格分镜生成
+  - [x] 9.1 实现九宫格生成后端 API
     - POST /api/v1/storyboard/generate-grid9
     - 调用 Gemini 3 Pro Image
     - 存储生成的图像
     - _Requirements: 5.1, 9.1_
 
-  - [ ] 9.2 实现 GridNine 组件
+  - [x] 9.2 实现 GridNine 组件
     - 3x3 网格展示
     - 分镜选择交互
     - 加载状态显示
@@ -144,12 +144,12 @@
     - _Requirements: 5.3, 6.1_
 
 - [ ] 10. 四宫格多角度生成
-  - [ ] 10.1 实现四宫格生成后端 API
+  - [x] 10.1 实现四宫格生成后端 API
     - POST /api/v1/storyboard/generate-grid4
     - 调用 Gemini 3 Pro Image
     - _Requirements: 6.2_
 
-  - [ ] 10.2 实现 GridFour 组件
+  - [x] 10.2 实现 GridFour 组件
     - 2x2 网格展示
     - 角度标注（远景、中景、近景、特写）
     - 角度选择交互
@@ -159,8 +159,8 @@
     - **Property 7: 四宫格角度标注完整性**
     - **Validates: Requirements 6.4**
 
-- [ ] 11. 高清重绘功能
-  - [ ] 11.1 实现高清重绘后端 API
+- [-] 11. 高清重绘功能
+  - [x] 11.1 实现高清重绘后端 API
     - POST /api/v1/storyboard/hd-redraw
     - 调用 Gemini 3 Pro Image
     - _Requirements: 7.2_
@@ -174,7 +174,7 @@
 - [ ] 12. Checkpoint - 分镜生成流程验证
   - 确保所有测试通过，如有问题请询问用户
 
-- [ ] 13. 提示词配置功能
+- [-] 13. 提示词配置功能
   - [ ] 13.1 实现提示词配置后端 API
     - GET/PUT /api/v1/prompts
     - 持久化存储
@@ -200,20 +200,20 @@
     - **Property 9: 提示词配置持久化**
     - **Validates: Requirements 8.4**
 
-- [ ] 14. 素材库功能
-  - [ ] 14.1 实现素材库后端 API
+- [-] 14. 素材库功能
+  - [x] 14.1 实现素材库后端 API
     - CRUD /api/v1/assets
     - CRUD /api/v1/categories
     - 分类筛选和标签搜索
     - _Requirements: 10.4, 10.5, 10.6, 10.8_
 
-  - [ ] 14.2 实现素材库页面
+  - [x] 14.2 实现素材库页面
     - AssetGrid 素材网格
     - CategoryFilter 分类筛选
     - TagSearch 标签搜索
     - _Requirements: 10.5, 10.6_
 
-  - [ ] 14.3 实现 AssetCard 组件
+  - [x] 14.3 实现 AssetCard 组件
     - 素材卡片展示
     - 详情查看
     - 编辑/删除操作
@@ -233,7 +233,7 @@
     - **Property 11: 素材库标签功能**
     - **Validates: Requirements 10.3**
 
-- [ ] 15. 响应式布局优化
+- [-] 15. 响应式布局优化
   - [ ] 15.1 实现移动端适配
     - 侧边栏折叠
     - 工作区自适应
@@ -243,7 +243,7 @@
     - **Property 13: 响应式布局适配**
     - **Validates: Requirements 11.5**
 
-- [ ] 16. Final Checkpoint - 完整功能验证
+- [x] 16. Final Checkpoint - 完整功能验证
   - 确保所有测试通过
   - 验证完整工作流程
   - 如有问题请询问用户
